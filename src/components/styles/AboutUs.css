@@ -1,0 +1,54 @@
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.logo {
+  height: 110px;
+}
+
+.page-header {
+  height: 200px;
+  width: 72vw;
+  padding: 40px;
+}
+
+.header-title {
+  padding-top: 10px;
+  font-size: 1.5em;
+  color: black;
+  font-family: ' Tahoma ', sans-serif;  
+}
+
+.content-sub {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 20px;
+}
+.ourTeam {
+  font-family: "lato", "HelveticaNeue", "Helvetica Neue", "Helvetica-Neue",
+    Helvetica, Arial, sans-serif;
+  padding: 10px;
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 4px solid #000;
+}
+
+.ourTeam p {
+  margin: 0%;
+}
+#team {
+  max-width: 70vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tmpxyz {
+  margin-bottom: 10px;
+}
