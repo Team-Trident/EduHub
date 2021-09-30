@@ -15,14 +15,12 @@ function AStarInfo() {
       <Toolbar/>
       <div className="Info">
         <h1 className="topic">A* Search</h1>
-        <p className="det">Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items. Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an array with n number of elements. Bubble Sort compares all the element one by one and sort them based on their values.
-
-If the given array has to be sorted in ascending order, then bubble sort will start by comparing the first element of the array with the second element, if the first element is greater than the second element, it will swap both the elements, and then move on to compare the second and the third element, and so on.
-
-If we have total n elements, then we need to repeat this process for n-1 times.
-
-It is known as bubble sort, because with every complete iteration the largest element in the given array, bubbles up towards the last place or the highest index, just like a water bubble rises up to the water surface.</p>
-      </div>
+        <p className="det">
+        A* algorithm works based on heuristic methods and this helps achieve optimality. A* is a different form of the best-first algorithm. Optimality empowers an algorithm to find the best possible solution to a problem. Such algorithms also offer completeness, if there is any solution possible to an existing problem, the algorithm will definitely find it.  
+        When A* enters into a problem, firstly it calculates the cost to travel to the neighbouring nodes and chooses the node with the lowest cost.
+        The heuristic value has an important role in the efficiency of the A* algorithm. To find the best solution, you might have to use different heuristic function 
+        according to the type of the problem. However, the creation of these functions is a difficult task, and this is the basic problem we face in AI. 
+        </p></div>
       <div className="App" id="abc">
         <PathfindingVisualizer></PathfindingVisualizer>
       </div>

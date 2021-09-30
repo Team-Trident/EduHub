@@ -15,14 +15,12 @@ function USInfo() {
       <Toolbar/>
       <div className="Info">
         <h1 className="topic">Unsorted Set</h1>
-        <p className="det">Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items. Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an SS with n number of elements. Bubble Sort compares all the element one by one and sort them based on their values.
+        <p className="det">
+        A set is used to provide a particular ordering on its element. The elements are ordered either by using a natural ordering or by using a Comparator. All the elements which are inserted into a sorted set must implement the Comparable interface.
 
-If the given SS has to be sorted in ascending order, then bubble sort will start by comparing the first element of the SS with the second element, if the first element is greater than the second element, it will swap both the elements, and then move on to compare the second and the third element, and so on.
-
-If we have total n elements, then we need to repeat this process for n-1 times.
-
-It is known as bubble sort, because with every complete iteration the largest element in the given SS, bubbles up towards the last place or the highest index, just like a water bubble rises up to the water surface.</p>
-      </div>
+The set's iterator will traverse the set in an ascending order. Several other operations are provided in order to make best use of ordering. All the elements must be mutually comparable.
+          </p>
+        </div>
       <div className="App" id="abc">
         <USVisualizer></USVisualizer>
       </div>
