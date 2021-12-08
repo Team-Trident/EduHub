@@ -2,7 +2,6 @@ import React, { useState }  from "react";
 import { Link, useHistory } from 'react-router-dom';
 import "./App.css";
 import Home from "./components/Home.js";
-import AboutUs from "./components/AboutUs.js";
 import SignUp from './components/SignUp';
 import logo from "./assets/EduhubLogo.jpg";
 import {
@@ -59,7 +58,6 @@ export default function App() {
       <Drawer />
       <Switch>
       <Route exact from="/" render={props => <Home {...props} />} />
-        <Route exact from="/AboutUs" component={AboutUs}/>
         <Route exact from="/SignUp" component={SignUp}/>
         <Route exact path="/Routes/DataStructure/Array/ArrayInfo" render={props => <ArrayInfo {...props} />} />
         <Route exact path="/Routes/DataStructure/Queue/QueueInfo" render={props => <QueueInfo {...props} />} />
