@@ -352,7 +352,7 @@ render() {
   return (
     <div>
     <div>
-    <Button onClick={()=>this.resetArray()} id="btn1">Generate a new list</Button>
+    <Button onClick={()=>this.resetArray()} id="btn1">Generate a new set</Button>
     <input type="number" id="dval" name="dval"/>
     <Button onClick={()=>this.deleteValue()} id="btn2">Delete Value</Button>
     <input type="number" id="val" name="val"/>

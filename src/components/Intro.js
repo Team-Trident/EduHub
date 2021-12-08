@@ -28,124 +28,6 @@ class Intro extends React.Component {
           <div className="row">
             <div className="col-md-4">
               <div className="work-box">
-                <a href={sort_img} data-lightbox="gallery-vmarine">
-                  <div className="work-img">
-                    <img src={sort_img} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-12">
-                        <h2 className="w-title">Sorting Algorithms</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Heap,Merge,Quick ...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-vmarine"
-                  
-                  style={{ display: "none" }}
-                  data-title=" Selection Sort"
-                  albumLabel="sorting"
-                  disableScrolling={true}
-                  showImageNumberLabel={false}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                  wrapAround={true}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={logo} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={path_img} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-12">
-                        <h2 className="w-title">Path Finding Algorithms</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Astar, DFS, BFS
-                          </span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={logo}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
                 <a href={logo} data-lightbox="gallery-todo">
                   <div className="work-img">
                     <img src={data_img} alt="" className="img-fluid" />
@@ -307,6 +189,118 @@ class Intro extends React.Component {
                 <a
                   href={logo}
                   data-lightbox="gallery-smth"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={logo} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={logo} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-12">
+                        <h2 className="w-title">COMING SOON !</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                          TO BE ADDED...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={logo} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={logo} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-12">
+                        <h2 className="w-title">COMING SOON !</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                          TO BE ADDED...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={logo}
+                  data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning

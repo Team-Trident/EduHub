@@ -8,7 +8,7 @@ import { Button, ButtonGroup} from '@material-ui/core';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
-import './USVisualizer.css';
+import './QueueVisualizer.css';
 
 
 
@@ -22,13 +22,13 @@ var ac=[1,2,3,4];
 var sz=4;
 
 
-export default class USVisualizer extends React.Component {
+export default class QueueVisualizer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       array: [1,2,3,4],
       abar: '4',
-      cn: 'array2',
+      cn: 'queue',
       items3: generateItems(parseInt(sz), (i) => ({ id: i, data: ac[parseInt(i)] })),
     };
   }
@@ -40,15 +40,14 @@ export default class USVisualizer extends React.Component {
 
   
   resetArray() {
-      this.state.cn='array2';
-      var vl=document.getElementById("x");
-      vl.style.border='transparent';
+      this.state.cn='queue';
       var vl=document.getElementById("x");
       vl.style.display="none";
       var v2=document.getElementById("arrow");
       v2.style.display="block";
-    const array = [];
-    this.state.abar=parseInt(4);
+    
+      const array = [];
+      this.state.abar=parseInt(4);
       for ( let i=0;i<this.state.abar;i++) {
         array.push(randomIntFromInterval(14,650));
       }
@@ -177,7 +176,10 @@ export default class USVisualizer extends React.Component {
       });
       return;
     }
-    for ( let i=0;i<this.state.abar-1;i++) {
+    for ( let i=0;i<this.state.abar;i++) {
+      if(i==0) {
+        continue;
+      }
       array.push(this.state.array[i]);
       console.log(array[i]);
     }
@@ -218,16 +220,17 @@ export default class USVisualizer extends React.Component {
     vl.style.width=(((this.state.abar-1)*130)+142)+'px';
   }
 
-  addValueUnsortedSet() {
+
+  addValueArr() {
     const array=[];
     var x=document.getElementById("val").value;
-    if(this.state.abar===8)
+    if(this.state.abar===6)
     {
       window.notification = new Notification();
       let instance = window.notification.new({
       type: 'error',
       title: 'Buffer Overflow',
-      message: 'Only 8 elements allowed',
+      message: 'Only 6 elements allowed',
       duration: 2000,
       position: 'bottom-right',
       thickBorder: 'bottom',
@@ -259,23 +262,6 @@ export default class USVisualizer extends React.Component {
       array.push(this.state.array[i]);
       console.log(array[i]);
     }
-    if(array.includes(parseInt(x)))
-    {
-      window.notification = new Notification();
-      let instance = window.notification.new({
-      type: 'info',
-      title: 'Exists',
-      message: 'The element already exist in the set',
-      duration: 2000,
-      position: 'bottom-right',
-      thickBorder: 'bottom',
-      iconless: false,
-      closable: false,
-      sticky: false,
-      closable: true,
-      });
-      return;
-    }
     array.push(parseInt(x));
     this.state.abar=parseInt(this.state.abar)+parseInt(1);
     ac=array;
@@ -286,14 +272,13 @@ export default class USVisualizer extends React.Component {
     console.log(this.state.abar);
     const arrayBar=document.getElementsByClassName(this.state.cn);
     for ( let i=0;i<array.length;i++) {
+      console.log(arrayBar[i]);
       if(!arrayBar[i])
       {
         continue;
       }
       else{
       const boStyle = arrayBar[i].style;
-      boStyle.backgroundColor='#ffbf00';
-      boStyle.color='#000000';
       }
     }
     window.notification = new Notification();
@@ -310,12 +295,12 @@ export default class USVisualizer extends React.Component {
       closable: true,
       });
     var vl=document.getElementById("x");
-    vl.style.width=(((this.state.abar-1)*142)+90)+'px';
+    vl.style.width=(((this.state.abar-1)*130)+142)+'px';
   }
 
 
   push() {
-      this.addValueUnsortedSet();
+      this.addValueArr();
   }
 
 messageCallSet() {
@@ -327,21 +312,19 @@ render() {
   return (
     <div>
     <div>
-    <Button onClick={()=>this.resetArray()} id="btn1">Generate a new set</Button>
-    <input type="number" id="dval" name="dval"/>
-    <Button onClick={()=>this.deleteValue()} id="btn2">Delete Value</Button>
+    <Button onClick={()=>this.resetArray()} id="btn1">Generate a new queue</Button>
     <input type="number" id="val" name="val"/>
     <Button onClick={()=>this.push()} id="btn3">Push</Button>
     <Button onClick={()=>this.pop()} id="btn4">Pop</Button>
     <hr></hr>
     </div>
-    <div className="array-container2" id="x">
+    <div className="array-container" id="x">
   <Container id="z" groupName="1" style={groupStyle} orientation="horizontal" getChildPayload={i => this.state.items3[i]} onDrop={e => {this.setState({array: applyDrag(this.refs.dsType.value,this.state.array,this.state.items3, e)}); this.messageCallSet()}}>
     {array.map((value, idx) => (
       <Draggable>
         <div
         className={this.state.cn}
-        id={idx}><p>{value}</p></div>
+        id={idx}><p className="p2">{value}</p></div>
       </Draggable>
     ))}
     </Container>
